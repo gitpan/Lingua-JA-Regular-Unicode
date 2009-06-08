@@ -2,8 +2,8 @@ package Lingua::JA::Regular::Unicode;
 use strict;
 use warnings;
 use utf8;
-use 5.00800;
-our $VERSION = '0.02';
+use 5.008001; # dankogai-san says "tr/// on 5.8.0 is buggy!"
+our $VERSION = '0.03';
 use Exporter 'import';
 
 our @EXPORT = qw/ hiragana2katakana alnum_z2h space_z2h katakana2hiragana katakana_h2z katakana_z2h space_h2z/;
@@ -203,6 +203,11 @@ This method ignores following chars:
 =head1 AUTHOR
 
 Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF GMAIL COME<gt>
+
+=head1 THANKS To
+
+    takefumi kimura - the author of L<Lingua::JA::Regular>
+    dankogai
 
 =head1 SEE ALSO
 

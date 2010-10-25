@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 use 5.008001; # dankogai-san says "tr/// on 5.8.0 is buggy!"
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 use Exporter 'import';
 
 our @EXPORT = qw/ hiragana2katakana alnum_z2h alnum_h2z space_z2h katakana2hiragana katakana_h2z katakana_z2h space_h2z/;
@@ -133,7 +133,7 @@ Lingua::JA::Regular::Unicode - convert japanese chars.
 
 =head1 SYNOPSIS
 
-    use Lingua::JA::Regular::Unicode qw/regular/;
+    use Lingua::JA::Regular::Unicode qw/alnum_z2h hiragana2katakana space_z2h/;
     alnum_z2h("Ａ１");                                        # => "A1"
     hiragana2katakana("ほげ");                                # => "ホゲ"
     space_z2h("\x{0300}");                                    # => 半角スペース

@@ -1,13 +1,13 @@
 ---
 abstract: 'convert japanese chars.'
 author:
-  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
+  - 'Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,10 +18,14 @@ no_index:
     - inc
     - t
     - xt
+provides:
+  Lingua::JA::Regular::Unicode:
+    file: lib/Lingua/JA/Regular/Unicode.pm
+    version: 0.06
 requires:
   Exporter: 5.58
   Filter::Util::Call: 0
-  perl: 5.8.1
+  perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+version: 0.06

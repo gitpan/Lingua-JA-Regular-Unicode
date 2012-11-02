@@ -11,10 +11,15 @@ DESCRIPTION
     Lingua::JA::Regular::Unicode is regularizer.
 
     alnum_z2h
-        convert alphabet and numbers ZENKAKU to HANKAKU.
+        Convert alphabet, numbers and symbols ZENKAKU to HANKAKU.
+
+        Symbols contains >, <.
+
+        Yes, it's bit strange. But so, this behaviour is needed by
+        historical reason.
 
     alnum_h2z
-        convert alphabet and numbers HANKAKU to ZENKAKU.
+        Convert alphabet, numbers and symbols HANKAKU to ZENKAKU.
 
     space_z2h
         convert spaces ZENKAKU to HANKAKU.

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 use 5.008001; # dankogai-san says "tr/// on 5.8.0 is buggy!"
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 use Exporter 'import';
 
 our @EXPORT = qw/ hiragana2katakana alnum_z2h alnum_h2z space_z2h katakana2hiragana katakana_h2z katakana_z2h space_h2z/;
@@ -146,12 +146,15 @@ Lingua::JA::Regular::Unicode is regularizer.
 
 =item alnum_z2h
 
-convert alphabet and numbers ZENKAKU to HANKAKU.
+Convert alphabet, numbers and B<symbols> ZENKAKU to HANKAKU.
+
+Symbols contains B<< > >>, B<< < >>.
+
+Yes, it's bit strange. But so, this behaviour is needed by historical reason.
 
 =item alnum_h2z
 
-convert alphabet and numbers HANKAKU to ZENKAKU.
-
+Convert alphabet, numbers and B<symbols> HANKAKU to ZENKAKU.
 
 =item space_z2h
 

@@ -1,14 +1,16 @@
 ---
 abstract: 'convert japanese chars.'
 author:
-  - 'Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>'
+  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>'
 build_requires:
-  Test::Base: 0
+  Data::Section::TestBase: 0
   Test::More: 0.98
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Minilla/v0.3.2, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,17 +18,27 @@ meta-spec:
 name: Lingua-JA-Regular-Unicode
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
 provides:
   Lingua::JA::Regular::Unicode:
     file: lib/Lingua/JA/Regular/Unicode.pm
-    version: 0.10
+    version: 0.11
 requires:
   Exporter: 5.58
   Filter::Util::Call: 0
   perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.10
+  bugtracker: https://github.com/tokuhirom/Lingua-JA-Regular-Unicode/issues
+  homepage: https://github.com/tokuhirom/Lingua-JA-Regular-Unicode
+  repository: git://github.com/tokuhirom/Lingua-JA-Regular-Unicode.git
+version: 0.11
+x_contributors:
+  - 'tokuhirom <tokuhirom@d0d07461-0603-4401-acd4-de1884942a52>'
+  - 'Keiji, Yoshimi <walf443@gmail.com>'
+  - 'tokuhirom <tokuhirom@gmail.com>'

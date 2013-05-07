@@ -23,12 +23,6 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Data::Section::TestBase" : "0",
-            "Test::More" : "0.98"
-         }
-      },
       "configure" : {
          "requires" : {
             "CPAN::Meta" : "0",
@@ -47,15 +41,20 @@
       "runtime" : {
          "requires" : {
             "Exporter" : "5.58",
-            "Filter::Util::Call" : "0",
             "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Data::Section::TestBase" : "0",
+            "Test::More" : "0.98"
          }
       }
    },
    "provides" : {
       "Lingua::JA::Regular::Unicode" : {
          "file" : "lib/Lingua/JA/Regular/Unicode.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       }
    },
    "release_status" : "stable",
@@ -69,7 +68,7 @@
          "web" : "https://github.com/tokuhirom/Lingua-JA-Regular-Unicode"
       }
    },
-   "version" : "0.11",
+   "version" : "0.12",
    "x_contributors" : [
       "tokuhirom <tokuhirom@d0d07461-0603-4401-acd4-de1884942a52>",
       "Keiji, Yoshimi <walf443@gmail.com>",

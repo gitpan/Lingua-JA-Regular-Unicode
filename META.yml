@@ -28,16 +28,15 @@ no_index:
 provides:
   Lingua::JA::Regular::Unicode:
     file: lib/Lingua/JA/Regular/Unicode.pm
-    version: 0.11
+    version: 0.12
 requires:
   Exporter: 5.58
-  Filter::Util::Call: 0
   perl: 5.008001
 resources:
   bugtracker: https://github.com/tokuhirom/Lingua-JA-Regular-Unicode/issues
   homepage: https://github.com/tokuhirom/Lingua-JA-Regular-Unicode
   repository: git://github.com/tokuhirom/Lingua-JA-Regular-Unicode.git
-version: 0.11
+version: 0.12
 x_contributors:
   - 'tokuhirom <tokuhirom@d0d07461-0603-4401-acd4-de1884942a52>'
   - 'Keiji, Yoshimi <walf443@gmail.com>'
